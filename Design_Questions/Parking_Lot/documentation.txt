@@ -1,0 +1,22 @@
+Design a Parking Lot:
+
+Questions and Thoughts::::::
+What is a parking lot?
+    It is more like an areas where cars are kep temporarily.
+    You visit a venue you park your car in a place other guests seem to have parked their cars
+        too, that place can be referred to as a parking lot
+
+What are we designing?
+    Let's think about how a  parking lot works
+        There are different things like cars, jeeps, motorcycles
+        Let's refer every form of a car as a vehicle
+        so we have vehicles, motorcycles, bicycles
+
+    What actions can be done in a parking lot
+        Check if there is space to park in a parking lot
+        Park your vehicle in the free space
+
+    Vehicles can come as:
+        Cars, Jeeps, and any other kind of vehicle
+
+    What should I do next?
