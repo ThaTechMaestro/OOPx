@@ -1,5 +1,9 @@
 Design a Parking Lot:
 
+
+---------------------------------------------------------------
+My Initial Thought Process
+
 Questions and Thoughts::::::
 What is a parking lot?
     It is more like an areas where cars are kep temporarily.
@@ -7,10 +11,22 @@ What is a parking lot?
         too, that place can be referred to as a parking lot
 
 What are we designing?
+    LEARNING INSIGHT (You assumed the parking lot was an open space):
+        You should ask what type of parking lot could it be....
+
     Let's think about how a  parking lot works
-        There are different things like cars, jeeps, motorcycles
-        Let's refer every form of a car as a vehicle
+         LEARNING INSIGHT (This is correct):
+        There are different things like cars, jeeps, motorcycles that can be modelled
+        Let's refer to every form of a car as a vehicle
         so we have vehicles, motorcycles, bicycles
+
+        LEARNING INSIGHT (You did not add
+                           parking spots,
+                            parking lot itself as things that can be modelled):
+
+
+
+
 
     What actions can be done in a parking lot
         Check if there is space to park in a parking lot
@@ -20,3 +36,70 @@ What are we designing?
         Cars, Jeeps, and any other kind of vehicle
 
     What should I do next?
+
+------------------------------------------------------------------
+
+Video Link: https://www.youtube.com/watch?v=DSGsa0pu8-k
+
+Learnings:
+Step 1: Identifying the problem domain
+Question: How should I solve this problem?
+    This problem can be solved in 3 ways:
+        Algorithmically
+        System Design
+        Class Hierarchy/OOP
+
+Step 2: Handling Ambiguities:
+Questions ---> :::Generating requirements and asking clarifying questions:::
+               - What type of parking lot is this?
+                    A building, open space, narrow road ?
+
+               - How many spots are we looking at?
+                    10 or 100 spots?
+
+               - Does this parking lot have multiple levels?
+                    Like in a building
+
+               - Are there multiple entrances?
+                    Concurrency issues
+
+               - Do different slots have different prices?
+                    What is the pricing strategy?
+
+               - (Business) Are there Premium Parking Spots for challenged people
+
+Step 3 ---> Clarifications have been made
+            Here is the question
+                Design a parking lot with 4 sizes(Come up with a Class hierarchy):
+                    Small - Motorcycles
+                    Medium - Regular cars
+                    Large - Jeeps
+                    Xlarge - Buses/Trucks
+
+                    Elements of small sizes can be kept in spots for large sizes:
+                    Elements of large sizes can not kept in spots for small sizes
+                        and so on...........
+
+STep 4 ---->   The actual Design
+                    Keywords/Generation of user requirements(Things that should be modelled):
+                        Parking Lot
+                        Vehicles (Cars, Motorcycles, Buses)
+                        Parking Spot(small, medium, large)
+
+
+
+----------------------------------------------------------
+Concepts Learned
+
+Why and when should we use an abstract class?
+    Abstract methods are methods that can only be declared not defined
+    Objects can not be created from abstract classes
+    Abstract class can have abstract methods
+
+    Abstract classes are created when we want to define functions within a class
+    without implementation.
+        Any class which inherits this abstract class can define their own custom implementation
+            of those functions.
+
+
+
